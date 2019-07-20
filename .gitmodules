@@ -1,0 +1,6 @@
+[submodule "Libraries/Framework/Libraries/LodePNG"]
+	path = Libraries/Framework/Libraries/LodePNG
+	url = https://github.com/lvandeve/lodepng.git
+[submodule "Libraries/Framework/Libraries/cJSON"]
+	path = Libraries/Framework/Libraries/cJSON
+	url = https://github.com/DaveGamble/cJSON

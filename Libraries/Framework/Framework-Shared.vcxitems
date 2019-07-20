@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{212ccc9f-e135-4e64-9a64-ce0143e4b0fe}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\cJSON\cJSON.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui_demo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui_draw.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Libraries\LodePNG\lodepng.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Memory\MyMemory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Events\EventManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\FrameworkPCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameCore\GameCore.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GL\GLHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Math\MyMatrix.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Utility\ShaderProgram.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Libraries\cJSON\cJSON.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Libraries\imgui\imgui_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Libraries\LodePNG\lodepng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Memory\MyMemory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\Event.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\EventManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\InputEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\FrameworkPCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameCore\GameCore.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GL\GLHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\MathHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\MyMatrix.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\Vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\CPPList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\Helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\ShaderProgram.h" />
+  </ItemGroup>
+</Project>

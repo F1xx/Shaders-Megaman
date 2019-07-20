@@ -1,0 +1,1 @@
+SpriteTool.exe -dirsrc Dice -output Dice -padding 1 -bottomleft

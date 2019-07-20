@@ -1,0 +1,1 @@
+SpriteTool.exe -dirsrc Bomberman -output Bomberman -padding 1 -bottomleft

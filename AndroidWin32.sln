@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{39E2626F-3545-4960-A6E8-258AD8476CE5}") = "Android-Application", "Game\Android-Application\Android-Application.androidproj", "{1B2660B7-D8F7-4329-9818-9D143F762BB6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game-Android", "Game\Game-Android.vcxproj", "{7129011E-A943-43DB-A40D-11EBEFC567DC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD} = {5A1F344A-C8FF-41E5-8CA3-0376119800BD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game-Win32", "Game\Game-Win32.vcxproj", "{C504882D-FDED-4949-8A2B-6847899502E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA3038A4-9635-42C3-8411-54419746666C} = {FA3038A4-9635-42C3-8411-54419746666C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game-Shared", "Game\Game-Shared.vcxitems", "{04735107-3ECB-4BB0-986F-AB19FCF6073A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{39A69636-DD48-4202-ACB4-C4E3C817D9C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework-Android", "Libraries\Framework\Framework-Android.vcxproj", "{5A1F344A-C8FF-41E5-8CA3-0376119800BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{188933F9-1C2F-4722-A424-DE5C8814E8DE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework-Shared", "Libraries\Framework\Framework-Shared.vcxitems", "{212CCC9F-E135-4E64-9A64-CE0143E4B0FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework-Win32", "Libraries\Framework\Framework-Win32.vcxproj", "{FA3038A4-9635-42C3-8411-54419746666C}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Game\Game-Shared.vcxitems*{04735107-3ecb-4bb0-986f-ab19fcf6073a}*SharedItemsImports = 9
+		Libraries\Framework\Framework-Shared.vcxitems*{212ccc9f-e135-4e64-9a64-ce0143e4b0fe}*SharedItemsImports = 9
+		Libraries\Framework\Framework-Shared.vcxitems*{5a1f344a-c8ff-41e5-8ca3-0376119800bd}*SharedItemsImports = 4
+		Game\Game-Shared.vcxitems*{c504882d-fded-4949-8a2b-6847899502e5}*SharedItemsImports = 4
+		Libraries\Framework\Framework-Shared.vcxitems*{fa3038a4-9635-42c3-8411-54419746666c}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android-ARM = Debug|Android-ARM
+		Debug|Win32-x86 = Debug|Win32-x86
+		Release|Android-ARM = Release|Android-ARM
+		Release|Win32-x86 = Release|Win32-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Debug|Android-ARM.ActiveCfg = Debug|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Debug|Android-ARM.Build.0 = Debug|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Debug|Android-ARM.Deploy.0 = Debug|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Debug|Win32-x86.ActiveCfg = Debug|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Release|Android-ARM.ActiveCfg = Release|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Release|Android-ARM.Build.0 = Release|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Release|Android-ARM.Deploy.0 = Release|ARM
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6}.Release|Win32-x86.ActiveCfg = Release|x86
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Debug|Android-ARM.ActiveCfg = Debug|ARM
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Debug|Android-ARM.Build.0 = Debug|ARM
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Debug|Win32-x86.ActiveCfg = Debug|ARM
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Release|Android-ARM.ActiveCfg = Release|ARM
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Release|Android-ARM.Build.0 = Release|ARM
+		{7129011E-A943-43DB-A40D-11EBEFC567DC}.Release|Win32-x86.ActiveCfg = Release|x86
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|Android-ARM.ActiveCfg = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|Win32-x86.ActiveCfg = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|Win32-x86.Build.0 = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|Android-ARM.ActiveCfg = Release|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|Win32-x86.ActiveCfg = Release|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|Win32-x86.Build.0 = Release|Win32
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Debug|Android-ARM.ActiveCfg = Debug|ARM
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Debug|Android-ARM.Build.0 = Debug|ARM
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Debug|Win32-x86.ActiveCfg = Debug|ARM
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Release|Android-ARM.ActiveCfg = Release|ARM
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Release|Android-ARM.Build.0 = Release|ARM
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD}.Release|Win32-x86.ActiveCfg = Release|x86
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|Android-ARM.ActiveCfg = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|Win32-x86.ActiveCfg = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|Win32-x86.Build.0 = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|Android-ARM.ActiveCfg = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|Win32-x86.ActiveCfg = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|Win32-x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B2660B7-D8F7-4329-9818-9D143F762BB6} = {39A69636-DD48-4202-ACB4-C4E3C817D9C0}
+		{7129011E-A943-43DB-A40D-11EBEFC567DC} = {39A69636-DD48-4202-ACB4-C4E3C817D9C0}
+		{C504882D-FDED-4949-8A2B-6847899502E5} = {39A69636-DD48-4202-ACB4-C4E3C817D9C0}
+		{04735107-3ECB-4BB0-986F-AB19FCF6073A} = {39A69636-DD48-4202-ACB4-C4E3C817D9C0}
+		{5A1F344A-C8FF-41E5-8CA3-0376119800BD} = {188933F9-1C2F-4722-A424-DE5C8814E8DE}
+		{212CCC9F-E135-4E64-9A64-CE0143E4B0FE} = {188933F9-1C2F-4722-A424-DE5C8814E8DE}
+		{FA3038A4-9635-42C3-8411-54419746666C} = {188933F9-1C2F-4722-A424-DE5C8814E8DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D942375A-EDF5-454A-BA54-50992580ED79}
+	EndGlobalSection
+EndGlobal

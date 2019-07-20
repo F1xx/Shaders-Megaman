@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{04735107-3ecb-4bb0-986f-ab19fcf6073a}</ItemsProjectGuid>
+    <ItemsProjectName>Game-Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\cJSONHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingMineObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingPlayerObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Transformable.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics\ContactListener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\DebugDraw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\FileTestScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\FloatingScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\GraphicsScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\PhysicsScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GamePCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\PoolTestScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\PooledObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\SpriteSheet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics\PhysicsWorld.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\SaveLoad.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\cJSONHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Camera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingMineObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\FloatingPlayerObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Transformable.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics\ContactListener.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\DebugDraw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\FileTestScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\FloatingScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\GraphicsScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\PhysicsScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ResourceManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GamePCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\PoolTestScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\MeshShapes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\SpriteSheet.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics\PhysicsWorld.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\SaveLoad.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Debug.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Debug.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water2.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water2.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\readme.txt" />
+  </ItemGroup>
+</Project>

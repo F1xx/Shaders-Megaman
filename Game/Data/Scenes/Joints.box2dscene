@@ -1,0 +1,277 @@
+{
+	"GameObjects":	[{
+			"Name":	"Main Camera",
+			"Pos":	[0, 0, -10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-Main"]
+		}, {
+			"Name":	"Hud Camera",
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-HUD"]
+		}, {
+			"Name":	"Ball",
+			"Pos":	[-1.7153682708740234, 1.9045298099517822, -9.5367431640625e-006],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.5, 0.5, 0.5],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.20000000298023224,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Megaman",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ground",
+			"Pos":	[-0.57496166229248047, -3.5811223983764648, -5.7220458984375e-006],
+			"Rot":	[0, -0, 0],
+			"Scale":	[10.541543960571289, 0.26524612307548523, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Slope1",
+			"Pos":	[-2.5450103282928467, 1.5370192527770996, -1.621246337890625e-005],
+			"Rot":	[0, -0, 32.997386932373047],
+			"Scale":	[5, 0.26524612307548523, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Slope2",
+			"Pos":	[0.69902020692825317, -0.89561605453491211, -8.58306884765625e-006],
+			"Rot":	[0, -0, -50.752677917480469],
+			"Scale":	[5, 0.26524612307548523, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ground1",
+			"Pos":	[-5.741511344909668, -1.2915382385253906, -5.7220458984375e-006],
+			"Rot":	[0, -0, 90],
+			"Scale":	[10.541543960571289, 0.26524612307548523, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Pin1",
+			"Pos":	[-4.2764077186584473, -2.6476826667785645, -5.7220458984375e-006],
+			"Rot":	[0, -0, 0],
+			"Scale":	[0.32699999213218689, 1.4650000333786011, 0.99999052286148071],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Megaman",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Pin2",
+			"Pos":	[-3.4847283363342285, -2.6476826667785645, -5.7220458984375e-006],
+			"Rot":	[0, -0, 0],
+			"Scale":	[0.32699999213218689, 1.4650000333786011, 0.99999052286148071],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Megaman",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Pin3",
+			"Pos":	[-2.653721809387207, -2.6476826667785645, -5.7220458984375e-006],
+			"Rot":	[0, -0, 0],
+			"Scale":	[0.32699999213218689, 1.4650000333786011, 0.99999052286148071],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Megaman",
+					"Texture":	"Data/Textures/Megaman.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spinner",
+			"Pos":	[-1.8563194274902344, -1.2368705272674561, -2.288818359375e-005],
+			"Rot":	[0, -0, 32.997386932373047],
+			"Scale":	[2.3091247081756592, 0.26524612307548523, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"FixedRotation":	0,
+					"Density":	0.5,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"PrefabComponentID":	0,
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Blocker",
+			"Pos":	[-2.107144832611084, -3.4071221351623535, -9.5367431640625e-007],
+			"Rot":	[0, -0, 90],
+			"Scale":	[1.3398964405059814, 0.26524612307548523, 0.9999966025352478],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrefabComponentID":	0,
+					"Offset":	[0, 0],
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"FixedRotation":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.86000001430511475,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"PrefabComponentID":	0,
+					"Material":	"Ground",
+					"Texture":	"Data/Textures/Ground.png",
+					"Shader":	"Shader_Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}]
+}

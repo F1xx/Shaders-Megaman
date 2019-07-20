@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{4B05A6F0-5029-4BAC-88F9-49967FAE76A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game-Shared", "Game\Game-Shared.vcxitems", "{04735107-3ECB-4BB0-986F-AB19FCF6073A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game-Win32", "Game\Game-Win32.vcxproj", "{C504882D-FDED-4949-8A2B-6847899502E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF} = {A434E80C-1049-10BE-D9CA-B31D459E0CEF}
+		{AD82F95E-C422-7443-A26D-57999762CED9} = {AD82F95E-C422-7443-A26D-57999762CED9}
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E} = {5E81B361-BFF0-A443-A143-44C7B2164E8E}
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0} = {1BD50A98-FB78-7F43-84A9-82901F5A00D0}
+		{FA3038A4-9635-42C3-8411-54419746666C} = {FA3038A4-9635-42C3-8411-54419746666C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{3EC61AD5-9361-4440-8B13-E1A40426DE66}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework-Win32", "Libraries\Framework\Framework-Win32.vcxproj", "{FA3038A4-9635-42C3-8411-54419746666C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework-Shared", "Libraries\Framework\Framework-Shared.vcxitems", "{212CCC9F-E135-4E64-9A64-CE0143E4B0FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2D", "Libraries\Box2D\Build\Box2D.vcxproj", "{A434E80C-1049-10BE-D9CA-B31D459E0CEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2Dand3DPhysics", "2Dand3DPhysics", "{2A0DAEB2-5A1D-4BFA-996D-12C43261DB4C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletCollision", "Libraries\Framework\Libraries\BulletCollision.vcxproj", "{1BD50A98-FB78-7F43-84A9-82901F5A00D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletDynamics", "Libraries\Framework\Libraries\BulletDynamics.vcxproj", "{AD82F95E-C422-7443-A26D-57999762CED9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearMath", "Libraries\Framework\Libraries\LinearMath.vcxproj", "{5E81B361-BFF0-A443-A143-44C7B2164E8E}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Game\Game-Shared.vcxitems*{04735107-3ecb-4bb0-986f-ab19fcf6073a}*SharedItemsImports = 9
+		Libraries\Framework\Framework-Shared.vcxitems*{212ccc9f-e135-4e64-9a64-ce0143e4b0fe}*SharedItemsImports = 9
+		Game\Game-Shared.vcxitems*{c504882d-fded-4949-8a2b-6847899502e5}*SharedItemsImports = 4
+		Libraries\Framework\Framework-Shared.vcxitems*{fa3038a4-9635-42c3-8411-54419746666c}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|x64.ActiveCfg = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|x64.Build.0 = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|x86.ActiveCfg = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Debug|x86.Build.0 = Debug|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|x64.ActiveCfg = Release|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|x86.ActiveCfg = Release|Win32
+		{C504882D-FDED-4949-8A2B-6847899502E5}.Release|x86.Build.0 = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x64.ActiveCfg = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x64.Build.0 = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Debug|x86.Build.0 = Debug|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|x64.ActiveCfg = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|x86.ActiveCfg = Release|Win32
+		{FA3038A4-9635-42C3-8411-54419746666C}.Release|x86.Build.0 = Release|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x64.ActiveCfg = Debug|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x64.Build.0 = Debug|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x86.ActiveCfg = Debug|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x86.Build.0 = Debug|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x64.ActiveCfg = Release|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x64.Build.0 = Release|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x86.ActiveCfg = Release|Win32
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x86.Build.0 = Release|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Debug|x64.ActiveCfg = Debug|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Debug|x86.ActiveCfg = Debug|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Debug|x86.Build.0 = Debug|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Release|x64.ActiveCfg = Release|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Release|x86.ActiveCfg = Release|Win32
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0}.Release|x86.Build.0 = Release|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Debug|x64.ActiveCfg = Debug|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Debug|x86.Build.0 = Debug|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Release|x64.ActiveCfg = Release|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Release|x86.ActiveCfg = Release|Win32
+		{AD82F95E-C422-7443-A26D-57999762CED9}.Release|x86.Build.0 = Release|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Debug|x64.ActiveCfg = Debug|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Debug|x86.Build.0 = Debug|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Release|x64.ActiveCfg = Release|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Release|x86.ActiveCfg = Release|Win32
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04735107-3ECB-4BB0-986F-AB19FCF6073A} = {4B05A6F0-5029-4BAC-88F9-49967FAE76A0}
+		{C504882D-FDED-4949-8A2B-6847899502E5} = {4B05A6F0-5029-4BAC-88F9-49967FAE76A0}
+		{FA3038A4-9635-42C3-8411-54419746666C} = {3EC61AD5-9361-4440-8B13-E1A40426DE66}
+		{212CCC9F-E135-4E64-9A64-CE0143E4B0FE} = {3EC61AD5-9361-4440-8B13-E1A40426DE66}
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF} = {2A0DAEB2-5A1D-4BFA-996D-12C43261DB4C}
+		{1BD50A98-FB78-7F43-84A9-82901F5A00D0} = {2A0DAEB2-5A1D-4BFA-996D-12C43261DB4C}
+		{AD82F95E-C422-7443-A26D-57999762CED9} = {2A0DAEB2-5A1D-4BFA-996D-12C43261DB4C}
+		{5E81B361-BFF0-A443-A143-44C7B2164E8E} = {2A0DAEB2-5A1D-4BFA-996D-12C43261DB4C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8A20104-B8E5-42C1-8DF9-CB2A9F7E4003}
+	EndGlobalSection
+EndGlobal

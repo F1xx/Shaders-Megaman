@@ -1,0 +1,1 @@
+SpriteTool.exe -dirsrc Zelda -output Zelda -padding 1 -bottomleft

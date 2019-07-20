@@ -1,0 +1,1 @@
+SpriteTool.exe -dirsrc Scoreboard -output Scoreboard -padding 1 -bottomleft
